@@ -8,7 +8,7 @@
 // twoFer() => "One for you, one for me"
 // twoFer("Elton") => "One for Elton, one for me"
 
-function twoFer(person: string = 'me'): string{
+const twoFer = (person: string = 'you'): string =>{
     return `One for ${person}, one for me`
 }
 
@@ -30,9 +30,16 @@ console.log(twoFer('Elton'))
 // - year is a multiple of 400
 // hint - use modulo
 
-function isLeapyear(year: number): boolean{
-    return year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)
+const isLeapyear = (year: number): boolean =>{
+    const divisibleBy4 = year % 4 === 0
+    const divisibleBy100 = year % 100 === 0
+    const divisibleBy400 = year % 400 === 0
+    if(divisibleBy4 && !divisibleBy100 || divisibleBy400)
+        return true
+    return false
 }
 
-console.log(isLeapyear(2012))
-console.log(isLeapyear(2013))
+console.log(isLeapyear(2000))
+console.log(isLeapyear(2200))
+console.log(isLeapyear(2001))
+console.log(isLeapyear(2004))

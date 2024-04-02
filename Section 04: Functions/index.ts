@@ -14,7 +14,7 @@ console.log(greet())
 
 // Inferred type of anonymous function parameters 
 const colors = ["red", "orange", 'blue', 1]
-colors.map(color =>{ // color: string is by default in this case, because it is inferred by Typescript
+colors.map( (color) =>{ // color: string is by default in this case, because it is inferred by Typescript
 
 })
 

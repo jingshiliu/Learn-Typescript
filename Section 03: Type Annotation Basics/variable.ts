@@ -20,6 +20,7 @@ console.log(movieTitle)
 
 let movie = 'Avengers'
 movie = 'Iron Man'
+
 movie = 1
 
 
@@ -38,11 +39,11 @@ anotherThing.crAts()
 // implicit any type
 
 const movies = ['Arrival', 'The Thing', 'Aliens']
-let foundMovie // Implicit Any
+let foundMovie // Implicit Any, it does NOT assign a type when first assign a value to it
 
 for(let theMovie of movies){
     if (theMovie === 'Arrival')
-        theMovie = 'Arrival' // Type Any
+        theMovie = 'Arrival' 
 }
 
 foundMovie() // no error 
