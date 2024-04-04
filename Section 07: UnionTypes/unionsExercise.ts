@@ -67,12 +67,11 @@ type HSL = {
 // Write a function called greet that accepts a single string OR an array of strings
 // It should print "Hello, <name>" for that single person OR greet each person in the array with the same format
 function greet(otherParty: string| string[]){
-    const names: string[] = []
     if(typeof otherParty === 'string'){
-        names.push(otherParty)
-    }
-
-    for(let name of names){
-        console.log(`Hello, ${name}`)
+        console.log(`Hello, ${otherParty}`)
+    }else{
+        for(let name of otherParty){
+            console.log(`Hello, ${name}`)
+        }
     }
 }
