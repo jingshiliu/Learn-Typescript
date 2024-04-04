@@ -39,3 +39,16 @@ function isDelivered(status: OrderStatus){
     return status === OrderStatus.DELIVERED
 }
 
+
+type Point = {
+    x: number,
+    y: number
+}
+
+function isSamePoint(p1: Point, p2: Point){
+    return p1.x === p2.x && p1.y === p2.y
+}
+
+// inline declaration must be exactly same as Point
+const point2 = {x: 1, y: 2, z: 2}
+isSamePoint({x: 1, y: 2}, point2)
