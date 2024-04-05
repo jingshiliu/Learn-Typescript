@@ -74,3 +74,19 @@ const doky: ServiceDog = {
 woof(doky)
 woof(lucky)
 
+function a(asds){
+    return asds
+}
+
+let me: Person = {
+    first: "j",
+    last: 's',
+    sayNo(name){
+        return 's'
+    },
+    sayHi(){
+        return 's'
+    }
+}
+
+
